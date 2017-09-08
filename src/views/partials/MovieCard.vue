@@ -48,7 +48,7 @@ export default {
       width: calc( 20% - 12px)
     }
     border: 1px solid #ccc;
-    box-shadow: 0 0 5px #2c3e50;
+    box-shadow: 0 0 5px #ccc;
     border-radius: 5px;
     .cover {
       width: 100%;
@@ -60,7 +60,7 @@ export default {
     }
     .info {
       padding-top: 10px;
-      height: 45px;
+      height: 35px;
       position: relative;
       .movieTitle {
         position: absolute;

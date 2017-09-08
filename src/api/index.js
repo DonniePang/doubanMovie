@@ -14,8 +14,8 @@ const HOST = '/api/movie/';
 // }
 
 export default {
-  fetchSearchData(path, query) {
-    let url = `${HOST}${path}?q={${query}}`;
+  fetchSearchData(path, query, start) {
+    let url = `${HOST}${path}?q={${query}}&start=${start}`;
     return axios.get(url)
   },
   fetchMovieDetail(id) {

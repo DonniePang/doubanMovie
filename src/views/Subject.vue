@@ -1,5 +1,6 @@
 <template>
   <div class="movieDetail">
+    <loading v-bind:loading="loading"></loading>
     <back></back>
     <div class="movie">
       <div class="subjectCover">
@@ -32,26 +33,31 @@
 </template>
 <script>
 import Back from '@/views/partials/Back.vue';
+import Loading from '@/views/partials/Loading.vue';
 
 import api from '@/api/index';
 
 export default {
   data() {
     return {
-      subject: {}
+      subject: {},
+      loading: false
     }
   },
   components: {
-    Back
+    Back,
+    Loading
   },
   methods: {
     async fetchSubject() {
+      this.loading = true;
       this.subject = await api.fetchMovieDetail(this.$route.params.id).then((res) => {
         return res.data
       });
+      this.loading = false;
     }
   },
-  mounted() {
+  created() {
     this.fetchSubject()
   }
 }

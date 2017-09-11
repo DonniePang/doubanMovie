@@ -6,9 +6,9 @@
       </div>
       <div class="info">
         <router-link :to="{ name: 'Subject', params: { id: subject.id }}">
-          <span class="movieTitle">{{subject.title}}</span>
+          <div class="movieTitle">{{subject.title}}</div>
         </router-link>
-        <span class="movieRating">{{subject.rating.average}}分</span>
+        <div class="movieRating">{{subject.rating.average}}分</div>
       </div>
     </div>
   </div>
@@ -52,23 +52,23 @@ export default {
     border-radius: 5px;
     .cover {
       width: 100%;
-      height: calc( 100% - 45px);
+      height: calc( 100% - 50px);
       img {
         width: 100%;
         height: 100%;
       }
     }
     .info {
-      padding-top: 10px;
-      height: 35px;
+      padding-left: 10px;
+      height: 50px;
       position: relative;
       .movieTitle {
-        position: absolute;
-        left: 10px;
+        margin-top: 5px;
+        height: 20px;
+        overflow: hidden;
       }
       .movieRating {
-        position: absolute;
-        right: 10px;
+        margin-top: 5px;
       }
     }
   }

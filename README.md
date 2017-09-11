@@ -1,6 +1,6 @@
-# vueclidemo
+# DoubanMovie
 
-> A Vue.js project
+> vue.js写的简单版豆瓣电影，用到vue，vue-router，axios，flex，async/await等等。
 
 ## Build Setup
 
@@ -18,4 +18,6 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+ ## 效果图
+ ![Alt show](./src/assets/show.gif)
+

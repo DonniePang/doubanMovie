@@ -2,6 +2,7 @@
 
 > vue.js写的简单版豆瓣电影，用到vue，vue-router，axios，flex，async/await等等。
 
+
 ## Build Setup
 
 ``` bash
